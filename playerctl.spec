@@ -45,13 +45,13 @@ Requires:       %{libname} = %{EVRD}
 %{summary}.
 
 
-%package -n docs
+%package docs
 Summary:        Documentation related to %{name}
 BuildArch:      noarch
 Requires:       %{name} = %{EVRD}
 BuildRequires:  gtk-doc
 
-%description -n docs
+%description docs
 %{summary}.
 
 
@@ -88,7 +88,7 @@ Requires:       %{name} = %{EVRD}
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
 
-%files -n docs
+%files docs
 %license COPYING
 %{_datadir}/gtk-doc/
 
